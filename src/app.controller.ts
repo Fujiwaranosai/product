@@ -42,7 +42,6 @@ export class AppController implements CrudController<ProductEntity> {
 
   @MessagePattern(ProductCommand.Find.All)
   getAll(@Payload() request: CrudRequest) {
-    console.log('GET ALL');
     this.logClient.emit(LogCommand.Log.Info, {
       channel: ProductCommand.Find.All,
       content: JSON.stringify(request),

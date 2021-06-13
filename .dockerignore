@@ -1,0 +1,7 @@
+node_modules
+.husky
+.idea
+dist
+test
+.git
+.nyc_output
